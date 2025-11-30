@@ -1,7 +1,7 @@
 #include <windows.h>
 
-#include "hotkey_handler.h"
-#include "../logger/logger.h"
+#include "HotkeyHandler.h"
+#include "../logger/Logger.h"
 
 namespace hotkeys 
 {

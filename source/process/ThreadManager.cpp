@@ -1,5 +1,5 @@
-#include "thread_manager.h"
-#include "../logger/logger.h"
+#include "ThreadManager.h"
+#include "../logger/Logger.h"
 
 namespace process
 {

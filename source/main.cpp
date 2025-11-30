@@ -1,10 +1,10 @@
 #include <iostream>
 #include <thread>
 
-#include "process/process_utils.h"
-#include "process/thread_manager.h"
-#include "hotkeys/hotkey_handler.h"
-#include "logger/logger.h"
+#include "process/Process.h"
+#include "process/ThreadManager.h"
+#include "hotkeys/HotkeyHandler.h"
+#include "logger/Logger.h"
 
 int wmain(int argc, wchar_t* argv[])
 {

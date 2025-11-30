@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../process/thread_manager.h"
+#include "../process/ThreadManager.h"
 
 namespace hotkeys 
 {

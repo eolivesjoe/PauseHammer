@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Windows.h>
 
-#include "logger.h"
+#include "Logger.h"
 
 namespace logger 
 {
