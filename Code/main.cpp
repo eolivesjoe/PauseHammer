@@ -8,24 +8,24 @@
 
 int wmain(int argc, wchar_t* argv[])
 {
-    logger::Init();
+    logger::init();
     if (argc < 2)
     {
-        logger::Error("no arguments...");
+        logger::error("no arguments...");
         return 0;
     }
 
-    auto pid = process::FindProcessIdByName(argv[1]);
+    auto pid = process::findProcessIdByName(argv[1]);
     
     if (pid == 0)
     {
-        logger::Error("process not found...");
+        logger::error("process not found...");
         return 0;
     }
 
     process::ThreadManager manager(pid);
     hotkeys::Handler handler(manager);
-    std::thread hotkeyThread(&hotkeys::Handler::Listener, &handler);
+    std::thread hotkeyThread(&hotkeys::Handler::listener, &handler);
 
     hotkeyThread.join();
 

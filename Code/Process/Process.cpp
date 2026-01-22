@@ -4,7 +4,8 @@
 
 namespace process
 {
-	DWORD FindProcessIdByName(const std::wstring& processName)
+	DWORD 
+	findProcessIdByName(const std::wstring& processName)
 	{
 
 		HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
@@ -28,7 +29,7 @@ namespace process
 			} while (Process32Next(snapshot, &entry) == TRUE);
 		}
 
-		logger::Error(processName);
+		logger::error(processName);
 		CloseHandle(snapshot);
 		return 0;
 	}

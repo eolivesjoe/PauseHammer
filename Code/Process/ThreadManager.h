@@ -13,15 +13,15 @@ namespace process
 	public:
 		ThreadManager(DWORD pid);
 
-		void TogglePause();
+		void togglePause();
 
 	private:
 		DWORD m_pid;
 		bool m_isPaused;
 		std::unordered_map<DWORD, int> m_suspendedThreads;
 
-		void SuspendAllThreads();
+		void suspendAllThreads();
 
-		void ResumeAllThreads();
+		void resumeAllThreads();
 	};
 } // namespace process

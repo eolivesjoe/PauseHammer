@@ -8,8 +8,7 @@ namespace hotkeys
 	{
 	public:
 		Handler(process::ThreadManager& manager);
-
-		void Listener();
+		void listener();
 
 	private:
 		process::ThreadManager& m_manager;

@@ -5,37 +5,37 @@
 
 namespace logger 
 {
-    void Init() 
+    void init() 
     {
         std::ios::sync_with_stdio(false);
     }
 
-    void Info(const std::string& msg)
+    void info(const std::string& msg)
     {
         std::cout << "[INFO] " << msg << std::endl;
     }
 
-    void Info(const std::wstring& msg)
+    void info(const std::wstring& msg)
     {
         std::wcout << "[INFO] " << msg << std::endl;
     }
 
-    void Info(DWORD msg)
+    void info(DWORD msg)
     {
         std::cout << "[INFO] " << msg << std::endl;
     }
 
-    void Error(const std::string& msg) 
+    void error(const std::string& msg) 
     {
         std::cerr << "[ERROR] " << msg << std::endl;
     }
 
-    void Error(const std::wstring& msg)
+    void error(const std::wstring& msg)
     {
         std::wcerr << "[ERROR] " << msg << std::endl;
     }
 
-    void Error(DWORD msg)
+    void error(DWORD msg)
     {
         std::cerr << "[ERROR] " << msg << std::endl;
     }

@@ -9,5 +9,5 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/lib)
 
 add_definitions(-DUNICODE -D_UNICODE)
 
-add_subdirectory(source)
+add_subdirectory(Code)
 enable_testing()
